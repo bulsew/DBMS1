@@ -1,4 +1,4 @@
-#include "db.h"
+﻿#include "db.h"
 
 DB::DB()
 {
@@ -14,7 +14,7 @@ bool DB::createRuanko()
     QDir dir;
 
     // 指定要创建的文件夹的绝对路径（Windows示例）,ruanko是要创建的文件夹
-       QString SYSTEMfolderPath = "D:/program/QT/DBMS/Ruanko";
+       QString SYSTEMfolderPath = "D:/testsssbin";
 
 
 
@@ -45,7 +45,7 @@ bool DB::createUserdb(QString USERdbName)
       //std::cin>>USERdbName;
 
    // 指定要创建的文件夹的绝对路径（Windows示例）
-      QString currentdbPath = "D:/program/QT/DBMS";
+      QString currentdbPath = "D:/testsssbin";
 
       // 拼接文件夹的完整路径
          QString USERdbPath = currentdbPath + QDir::separator() + USERdbName;

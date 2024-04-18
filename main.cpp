@@ -1,34 +1,42 @@
-﻿#include "widget.h"
-#include"table.h"
+﻿
+#include "mainwindow.h"
 #include <QApplication>
-#include <iostream>
-#include <fstream>
-#include <vector>
-#include <string>
-#include <QCoreApplication>
-#include <QFile>
-#include <QDataStream>
-#include <QDebug>
-
-
-
+#include"db.h"
+#include"parser.h"
+#include"table.h"
 int main(int argc, char *argv[])
 {
-    QCoreApplication a(argc, argv);
+
+//    QApplication a(argc, argv);
 
 
-    vector<tableRows> a1;
+//    DB db;
+//    MainWindow w;
+    Parser p;
+//    p.parserfirst("INSERT INTO student (sname, ssex, sno) VALUES (1,John Doe,sii);");
+//    Table aaaa("student");
+//    aaaa.show();
+     p.parserfirst("delete student;");
+//    p.parserfirst("CREATE TABLE student ("
+//                  "    Sno INT,"
+//                  "sname INT);"
 
-//    a1.push_back({"sname",type::VARCHAR,15,constrain::NONE,false,""});
-//    a1.push_back({"sno",type::VARCHAR,8,constrain::NONE,false,""});
-//    a1.push_back({"ssex",type::VARCHAR,2,constrain::NONE,false,""});
-//    Table c(a1,"student");
-//    c.dropTable();
-    Table c("student");
-    c.instertTOTable("'Tim'|'22301161'|'女'");
-    c.show();
+//                  );
+//    //Table("student");
+//    QString ab = "CREATE TABLE student ("
+//                "    Sno VARCHAR(8) PRIMARY KEY,"
+//                "    Sname VARCHAR(8) NOT NULL,"
+//                "    Ssex NVARCHAR(2) CHECK (Ssex IN ('男', '女')),"
+//                "    Sbirthday DATE,"
+//                "    Classno VARCHAR(6),"
+//                "    Totalcredit SMALLINT DEFAULT 0,"
+//                "    Createdby VARCHAR(8) DEFAULT NULL,"
+//                "    FOREIGN KEY (Classno) REFERENCES class(Classno)"
+//                ");";
 
 
+//    //w.show();
 
+//    return a.exec();
+    //Table aa("student");
 }
-

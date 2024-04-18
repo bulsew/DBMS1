@@ -63,7 +63,7 @@ bool Table::instertTOTable(const string& content, const string& correspond)
     vector<string>  content_v=splitByPipe(content);//每列对应内容
     //先解析是否有对应的列要求
     if(correspond!="")//有要求插入（）
-    {       
+    {
         for(unsigned j =0;j<correspond_v.size();++j)//对每个列名进行检查，不存在相关列名直接报错,将其插入当前列
         {
             unsigned int i=0;

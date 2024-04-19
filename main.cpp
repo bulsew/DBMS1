@@ -7,17 +7,17 @@
 int main(int argc, char *argv[])
 {
 
-//    QApplication a(argc, argv);
+    QApplication a(argc, argv);
 
 
-//    DB db;
-//    MainWindow w;
-    Parser p;
+    DB db;
+    MainWindow w;
+//    Parser p;
 //    p.parserfirst("INSERT INTO student (sname, ssex, sno) VALUES (1,John Doe,sii);");
 //    Table aaaa("student");
 //    aaaa.show();
-     p.parserfirst("delete student;");
-//    p.parserfirst("CREATE TABLE student ("
+     //p.parserfirst("delete student;");
+//    p.parserfirst("CREATE TABLE student1 ("
 //                  "    Sno INT,"
 //                  "sname INT);"
 
@@ -35,8 +35,8 @@ int main(int argc, char *argv[])
 //                ");";
 
 
-//    //w.show();
+    w.show();
 
-//    return a.exec();
+    return a.exec();
     //Table aa("student");
 }

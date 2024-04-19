@@ -194,7 +194,7 @@ QString Parser::parserfirst( QString text)
 
                  qDebug() << "Matched String:" << matchedString;
              }
-             Table d(a,"sadadsa");
+             Table d(a,tname);
              //qDebug(a)
              //Table a1(a,tname);
 //             for(auto aaaa:a)

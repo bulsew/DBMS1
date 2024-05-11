@@ -21,6 +21,7 @@ SOURCES += \
     widget.cpp
 
 HEADERS += \
+    constrain.h \
     table.h \
     widget.h
 
